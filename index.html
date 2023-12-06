@@ -20,10 +20,7 @@
         <a href="#about">About</a>
         <a href="#skill">Skill</a>
         <a href="#project">Project</a>
-        <a
-          href="https://drive.google.com/file/d/1f5O1y-ZtLe7S6VBaO6rfFyGoixm_R2Lj/view?usp=sharing"
-          >Resume</a
-        >
+        <a href="Vishal-Kumar-Resume.pdf" onclick="resume()" download>Resume</a>
         <a href="#contact">Contact</a>
       </nav>
     </header>
@@ -49,9 +46,9 @@
           ></a>
         </div>
         <a
-          href="https://drive.google.com/file/d/1f5O1y-ZtLe7S6VBaO6rfFyGoixm_R2Lj/view?usp=sharing"
+          href="Vishal-Kumar-Resume.pdf"
           class="btn"
-          target="_blank"
+          onclick="resume()"
           download
           >Download Resume</a
         >
@@ -255,5 +252,13 @@
     <script src="https://unpkg.com/scrollreveal"></script>
 
     <script src="script.js"></script>
+
+    <script>
+      function resume() {
+        window.open(
+          "https://drive.google.com/file/d/1f5O1y-ZtLe7S6VBaO6rfFyGoixm_R2Lj/view?usp=sharing"
+        );
+      }
+    </script>
   </body>
 </html>

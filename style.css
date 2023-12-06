@@ -206,7 +206,7 @@ span {
   overflow: hidden;
   display: flex;
 }
-.project-box .project-layer {
+.project-box {
   position: absolute;
   bottom: 0;
   left: 0;
@@ -224,6 +224,12 @@ span {
 }
 .project-box:hover .project-layer {
   transform: translateY(0);
+}
+.project-layer {
+  padding: 3%;
+}
+.link {
+  justify-content: center;
 }
 
 .project-layer h4 {
