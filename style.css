@@ -190,7 +190,7 @@ span {
 .project {
   background: var(--second-bg-color);
 }
-.project h2 {
+/* .project h2 {
   margin-bottom: 4rem;
 }
 .project-container {
@@ -206,7 +206,7 @@ span {
   overflow: hidden;
   display: flex;
 }
-.project-box {
+.project-box .project-layer {
   position: absolute;
   bottom: 0;
   left: 0;
@@ -225,11 +225,36 @@ span {
 .project-box:hover .project-layer {
   transform: translateY(0);
 }
+
+
+.project-box img {
+  width: 100%;
+  transition: 0.5s ease;
+}
+.project-box:hover img {
+  transform: scale(1.1);
+}
+.link {
+  display: flex;
+  flex-direction: row;
+  gap: 2rem;
+} */
+
+.project-box .project-layer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+  padding: 0, 4rem;
+  background: linear-gradient(rgba(0, 0, 0, 0.4), var(--main-color));
+}
 .project-layer {
   padding: 3%;
 }
-.link {
-  justify-content: center;
+
+.project-container .project-box {
+  box-shadow: 0 0 1rem var(--bg-color);
 }
 
 .project-layer h4 {
@@ -251,21 +276,62 @@ span {
   border-radius: 50%;
 }
 .project-layer a i {
-  font-size: 2rem;
+  font-size: 3rem;
+  margin: auto;
   color: var(--second-bg-color);
 }
+
+.project {
+  text-align: center;
+  padding: 80px 0;
+}
+
+.project-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  margin-top: 40px;
+}
+
+.project-box {
+  position: relative;
+  width: 45%;
+  margin: 20px;
+  background-color: #fff;
+  border-radius: 15px;
+  overflow: hidden;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease-in-out;
+}
+
+.project-box:hover {
+  transform: scale(1.05);
+}
+
 .project-box img {
   width: 100%;
-  transition: 0.5s ease;
+  height: auto;
+  border-radius: 15px 15px 0 0;
 }
-.project-box:hover img {
-  transform: scale(1.1);
+
+.project-layer h4 {
+  font-size: 1.8rem;
+  color: #fff;
+  margin-bottom: 10px;
 }
+
+.project-layer p {
+  font-size: 1.3rem;
+  color: #1c1919;
+  margin-bottom: 15px;
+}
+
 .link {
   display: flex;
   flex-direction: row;
   gap: 2rem;
 }
+
 .contact h2 {
   margin-bottom: 3rem;
 }
