@@ -335,7 +335,58 @@ span {
 .contact h2 {
   margin-bottom: 3rem;
 }
-.contact form {
+
+.contact {
+  text-align: center;
+  padding: 50px 20px;
+}
+
+.contact-container {
+  font-size: 1.6rem;
+  border-radius: 8px;
+  border: 1px solid white;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  max-width: 400px;
+  width: 100%;
+  margin: auto;
+  margin-top: 3%;
+}
+
+p {
+  color: #ece6e6;
+  margin-bottom: 20px;
+}
+
+.contact-info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.contact-info p {
+  margin: 10px 0;
+}
+
+.contact-info a {
+  color: #007bff;
+  text-decoration: none;
+  margin-top: 10px;
+  display: inline-block;
+}
+
+.contact-info a:hover {
+  text-decoration: underline;
+}
+
+/* Responsive Styling */
+@media (max-width: 600px) {
+  .contact-container {
+    max-width: 100%;
+  }
+}
+
+/* .contact form {
   max-width: 70rem;
   margin: 1rem auto;
   text-align: center;
@@ -363,7 +414,7 @@ span {
 .contact form .btn {
   margin-top: 2rem;
   cursor: pointer;
-}
+} */
 
 .footer {
   text-align: right;
