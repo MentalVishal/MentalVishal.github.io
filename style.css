@@ -384,7 +384,7 @@ span {
 /* Responsive Styling */
 @media (max-width: 600px) {
   .contact-container {
-    max-width: 100%;
+    max-width: 90%;
     font-size: 1.8rem;
   }
   .project-box {
