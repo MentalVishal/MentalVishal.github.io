@@ -338,24 +338,26 @@ span {
 
 .contact {
   text-align: center;
-  padding: 50px 20px;
+  padding: 80px 0;
 }
 
 .contact-container {
-  font-size: 1.6rem;
+  font-size: 3rem;
   border-radius: 8px;
-  border: 1px solid white;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 0 1rem var(--main-color);
+  background-color: var(--main-color);
   padding: 20px;
-  max-width: 400px;
+  max-width: 600px;
   width: 100%;
   margin: auto;
   margin-top: 3%;
 }
 
-p {
-  color: #ece6e6;
+.contact p {
+  color: var(--second-bg-color);
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
   margin-bottom: 20px;
+  font-weight: 700;
 }
 
 .contact-info {
@@ -383,6 +385,10 @@ p {
 @media (max-width: 600px) {
   .contact-container {
     max-width: 100%;
+    font-size: 1.8rem;
+  }
+  .project-box {
+    width: 85%;
   }
 }
 
